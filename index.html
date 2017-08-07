@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman Game</title>
+    <link rel="shortcut icon" href="assets/images2/icon.ico"/>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+        <div class="logo">
+                <img class="logo" src="assets/images2/logo.png" style="width: 75%; height: 250px;">
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p id="rules">INSTRUCTIONS : Guess the correct word before you run out of lifes.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-2">
+                <div id="hangman-img-holder">
+                    <img src="assets/images/animals.png" alt="hangman image" height="250" width="330" id="hangman-img">
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-5">
+                <div id="loadingMessage"></div>
+                <div id="winLose">
+                    <div>Wins:
+                        <span id="winCount"></span>
+                    </div>
+
+                    <div>Losses :
+                        <span id="loseCount"></span></div>
+                </div>
+
+                <div>Lifes Left : 
+                    <span id="lifes">7</span>
+                </div>
+                <div id="gameWord"><b>Word : 
+                    <span id="word"></span></b>
+                </div>
+            </div>
+        </div>         
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Press Any Letter To Start.</h2>
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div id="letterBtn"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <footer>
+                ©Copyright 2017 Robert Castiblanco
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
